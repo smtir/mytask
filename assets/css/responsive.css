@@ -1,0 +1,310 @@
+@media (min-width: 768px) and (max-width: 979px) {
+  
+}
+
+@media (max-width: 767px) {
+
+}
+
+@media (min-width: 1200px) {
+    .container {
+        width: 1000px;
+    }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+    ul.main_navigation>li {
+        padding: 0 7px;
+    } 
+    ul.main_navigation>li a {
+        font-size: 12px;
+    }    
+}
+@media (min-width: 768px) and (max-width: 979px) {
+ 
+}
+
+@media (max-width: 767px) {
+
+}
+
+@media (max-width: 979px) {
+
+}
+@media (max-width: 991px) {
+ul.main_navigation {
+    display: none;
+}
+}
+
+@media (min-width: 980px) {
+
+}
+
+/* Large desktop */
+@media (min-width: 1200px) {  }
+ 
+/* Portrait tablet to landscape and desktop */
+@media (min-width: 768px) and (max-width: 979px) { 
+
+ }
+ 
+/* Landscape phone to portrait tablet */
+@media (max-width: 767px) { 
+    [class*="col-"].float-right, [class*="col-"].float-left {
+        float: none !important;
+    }
+    ul.left_top_nav,ul.right_top_nav {
+        float: none !important;
+        display: block;
+        text-align: center;
+    }
+    .right_top_nav li {
+        border-left: 0;
+    }
+    .top_nav ul>li {
+        font-size: 12px;
+    }
+    .logo img {
+        display: block;
+        margin: 0 auto;
+    }
+}
+
+/* Extra small devices (portrait phones, less than 576px) */
+@media (min-width: 280px) and (max-width: 575px) {
+    .logo {
+        margin: 8px 0;
+    }
+    .scroll_content {
+        top: -8px;
+    }
+    .callout {
+        top: 20%;
+    }
+    .callout h1 {
+        margin: 0 0 15px;
+        font-size: 1.5rem;
+    }
+    .landing_btn {
+        font-size: 12px;
+        padding: 5px 10px;
+    }
+    .secondary_nav>ul>li {
+        display: block;
+        margin: 5px auto;
+    }
+    .secondary_nav>ul>li:not(:first-child):not(:last-child) {
+        border: 4px solid #dbe3f4;
+    }
+    .secondary_nav>ul>li:last-child:not(:first-child) {
+        border: 4px solid #dbe3f4;
+    }
+    .rate,.qualify,.plan,.learn {
+        padding: 30px;
+    }
+    section#workwitheon {
+        padding: 15px 30px;
+        display: block;
+    }
+    nav.secondary_nav {
+        margin: 0 25px 0 -15px;
+    }
+    .rate>h2, .plan>h2, .qualify>h2, .learn>h2 {
+        font-size: 1.3rem;
+    }
+    
+    section#testimonial .owl-carousel .item {
+        max-width: 90%;
+        margin: 50px auto;
+    }
+    section#testimonial .owl-carousel .quote_icon {
+        width: 50px;
+        margin: 20px auto;
+    }
+    section#testimonial .owl-carousel .testimonial_text {
+        padding: 5px 20px;
+        font-size: 0.8rem;
+    }
+    section#workwitheon h2 {
+        font-size: 1.6rem;
+    }
+    .landing_work {
+        margin: 15px 0;
+    }
+    .icon {
+        display: block;
+        margin: 10px auto;
+    }
+    section#contact form input[type="text"] {
+        margin: 5px 0;
+    }
+    .footer_illustration {
+        margin-left: -15px;
+        margin-right: -15px;
+    }
+    #homemap {
+        height: 400px;
+    }
+    .homemapcontent {
+        top: 15%;
+        margin: 0 30px;
+        padding: 20px 30px 10px;
+    }
+    .homemapcontent p {
+        margin: 0 0 10px;
+    }
+    footer.footer {
+        padding: 30px 20px;
+    }
+    ul.footer_navigation {
+        margin: 15px 0 0 -10px;
+    }
+    ul.footer_navigation>li {
+        display: inline-block;
+        margin: 5px;
+    }
+    section#testimonial .owl-carousel .item {
+        max-width: 90%;
+    }
+}
+
+/* Landscape phones and down */
+@media (max-width: 480px) { 
+	.rate_img, .qualify_img, .plan_img, .learn_img {
+        display: none;
+    }
+	section#testimonial .owl-carousel .item {
+		max-width: 90%;
+	}
+}
+@media (min-width: 501px) and (max-width: 575px) {}
+    #home_animation {
+        height: 280px;
+    }
+}
+@media (min-width: 451px) and (max-width: 500px) {}
+    #home_animation {
+        height: 240px;
+    }
+}
+@media (min-width: 401px) and (max-width: 450) {
+    #home_animation {
+        height: 220px;
+    }
+}
+@media (min-width: 350px) and (max-width: 400px) {
+    #home_animation {
+        height: 200px;
+    }
+}
+@media (min-width: 321px) and (max-width: 349px) {
+    #home_animation {
+        height: 170px;
+    }
+}
+@media (max-width: 320px) { 
+    .secondary_nav>ul>li {
+        display: block;
+        margin: 5px auto;
+    }
+    .secondary_nav>ul>li:not(:first-child):not(:last-child) {
+        border: 4px solid #dbe3f4;
+    }
+    .secondary_nav>ul>li:last-child:not(:first-child) {
+        border: 4px solid #dbe3f4;
+    }
+    .callout {
+        top: 0;
+    }
+    #home_animation {
+        height: 160px;
+    }
+    .rate,.qualify,.plan,.learn {
+        padding: 30px;
+    }
+    .rate_img, .qualify_img, .plan_img, .learn_img {
+        display: none;
+    }
+    section#workwitheon {
+        padding: 15px 30px;
+        display: block;
+    }
+    nav.secondary_nav {
+        margin: 0 25px 0 -15px;
+    }
+    .rate>h2, .plan>h2, .qualify>h2, .learn>h2 {
+        font-size: 1.3rem;
+    }
+    section#testimonial .owl-carousel .item {
+        max-width: 90%;
+        margin: 50px auto;
+    }
+    section#testimonial .owl-carousel .quote_icon {
+        width: 50px;
+        margin: 20px auto;
+    }
+    section#testimonial .owl-carousel .testimonial_text {
+        padding: 5px 20px;
+        font-size: 0.8rem;
+    }
+    section#workwitheon h2 {
+        font-size: 1.6rem;
+    }
+    .landing_work {
+        margin: 15px 0;
+    }
+    .icon {
+        display: block;
+        margin: 10px auto;
+    }
+    section#contact form input[type="text"] {
+        margin: 5px 0;
+    }
+    .footer_illustration {
+        margin-left: -15px;
+        margin-right: -15px;
+    }
+    #homemap {
+        height: 400px;
+    }
+    .homemapcontent {
+        top: 15%;
+        margin: 0 30px;
+        padding: 20px 30px 10px;
+    }
+    .homemapcontent p {
+        margin: 0 0 10px;
+    }
+    footer.footer {
+        padding: 30px 20px;
+    }
+    ul.footer_navigation {
+        margin: 15px 0 0 -10px;
+    }
+    ul.footer_navigation>li {
+        display: inline-block;
+        margin: 5px;
+    }
+}
+
+
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767px) {
+
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991px) {
+
+} 
+ 
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199px) {
+
+} 
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+
+}
