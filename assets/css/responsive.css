@@ -166,6 +166,9 @@ ul.main_navigation {
     section#testimonial .owl-carousel .item {
         max-width: 90%;
     }
+    a.scrollup {
+        z-index: 9999;
+    }
 }
 
 /* Landscape phones and down */
