@@ -98,7 +98,7 @@ ul.main_navigation>li a {
   font-size: 14px;
   text-transform: uppercase;
 }
-.getstarted_btn {
+.getstarted_menu {
   border: 3px solid rgba(115, 185, 230, 0.2);
   padding: 8px 20px !important;
   border-bottom-right-radius: 10px;
@@ -108,11 +108,11 @@ ul.main_navigation>li a {
   -icab-border-bottom-right-radius: 10px;
   -khtml-border-bottom-right-radius: 10px;
 }
-.getstarted_btn:hover,.getstarted_btn:focus {
+.getstarted_menu:hover,.getstarted_menu:focus {
   border: 3px solid rgba(115, 185, 230, 1);
 }
 button#m_main_navigation_btn {
-    margin: 10px 0;
+  margin: 10px 0;
 }
 .m_main_navigation {
   height: 100%;
@@ -226,9 +226,13 @@ section#callaction {
   padding: 0;
   position: relative;
 }
+#home_animation {
+    height: 465px;
+}
 .scroll_content {
     text-align: center;
     position: relative;
+    top: -10px;
 }
 .scroll_content a {
 }
@@ -256,7 +260,7 @@ nav.secondary_nav {
 }
 .secondary_nav>ul>li {
     display: inline;
-    margin: 0 -2px;
+    margin: 0 -3px;
     padding: 10px 20px;
     border: 4px solid #dbe3f4;
 }
@@ -303,11 +307,14 @@ section#section_plan {
 }
 
 section#section_qualify {
-  background: #f0e9de;   
+  background: #f0e9de;  
+  padding: 0 0 35px 0; 
 }
+
 .qualify {
   padding: 60px 115px;
 }
+
 #section_qualify img {
     max-width: 60%;
     width: 185px;
@@ -353,16 +360,20 @@ section#section_learn {
   background-image: url(../images/find_rates_illustration.png);
   background-size: 310px 320px;
   min-height: 320px;
+  margin-bottom: -20px;
 }
 .qualify_img {
   background-image: url(../images/prequalify_illustration.png);
   background-size: 195px 175px;
   min-height: 175px;
+  margin-top: 100px;
 }
 .plan_img {
   background-image: url(../images/plan_budget_illustration.png);
-  background-size: 250px 250px;
-  min-height: 250px;
+  background-size: 255px 285px;
+  min-height: 285px;
+  margin-top: 117px;
+  margin-bottom: 0;
 }
 .learn_img {
   background-image: url(../images/learn_illustration.png);
@@ -382,7 +393,7 @@ section#workwitheon h2 {
 
 }
 .landing_work>img {
-max-height: 50px;
+  max-height: 50px;
 }
 .landing_work .work_title {
     font-size: 0.9rem;
@@ -397,10 +408,10 @@ max-height: 50px;
     font-size: 0.8rem;
 }
 section#callnow {
-background: #006cb5;
-text-align: center;
-color: #fff;
-padding: 40px 15px 20px;
+  background: #006cb5;
+  text-align: center;
+  color: #fff;
+  padding: 40px 15px;
 }
 section#callnow h2 {
 
@@ -735,17 +746,17 @@ ul.footer_navigation>li a {
 }
 a.scrollup {
   font-size: 20px;
-    text-align: center;
-    color: #fff;
+  text-align: center;
+  color: #fff;
   opacity: 0.4;
-    padding: 5px 10px;
-    position: fixed;
-    bottom: 8px;
-    right: 27px;
-    background-color: #21759b;
-    border: 2px solid #0b5f86;
-    border-radius: 7px;
-    display: none;
+  padding: 5px 10px;
+  position: fixed;
+  bottom: 8px;
+  right: 27px;
+  background-color: #21759b;
+  border: 2px solid #0b5f86;
+  border-radius: 7px;
+  display: none;
 }
 .scrollup:hover {
   opacity: 1;

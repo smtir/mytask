@@ -180,16 +180,19 @@ ul.main_navigation {
 		max-width: 90%;
 	}
 }
-@media (min-width: 501px) and (max-width: 575px) {}
+
+@media (min-width: 501px) and (max-width: 575px) {
     #home_animation {
         height: 280px;
     }
 }
-@media (min-width: 451px) and (max-width: 500px) {}
+
+@media (min-width: 451px) and (max-width: 500px) {
     #home_animation {
         height: 240px;
     }
 }
+
 @media (min-width: 401px) and (max-width: 450) {
     #home_animation {
         height: 220px;
