@@ -84,6 +84,7 @@ $( document ).ready( function() {
   }
   google.maps.event.addDomListener(window, 'load', initmap);
   // End Homepage Google Map  
+});
 
 //jQuery for page scrolling feature - requires jQuery Easing plugin
 $(function() {
