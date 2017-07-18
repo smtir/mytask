@@ -71,6 +71,12 @@ a:visited {
 .top_nav ul>li a:hover,.top_nav ul>li a:focus,.top_nav ul>li a:active {
   text-decoration: none;
 } 
+.top_nav ul>li a:hover {
+  opacity: 0.7;
+}
+.left_top_nav li i:hover {
+  opacity: 0.6;
+}
 .left_top_nav li {
   padding: 5px 12px 5px 10px;
 }
@@ -97,6 +103,9 @@ ul.main_navigation>li a {
   font-style: normal;
   font-size: 14px;
   text-transform: uppercase;
+}
+ul.main_navigation>li a:hover {
+  opacity: 0.7;
 }
 .getstarted_menu {
   border: 3px solid rgba(115, 185, 230, 0.2);
@@ -197,12 +206,30 @@ section#callaction {
   color: #a37e2d;
   margin: 0 0 25px;
 }
-.landing_btn {
+.getstart_action {
   background: #e5dac6;
   color: #a37e2d;
   font-size: 14px;
   padding: 15px 20px;
-  border: 2px solid #e5dac6;
+  border: 3px solid #e5dac6;
+  border-bottom-right-radius: 10px;
+  -webkit-border-bottom-right-radius: 10px;
+  -moz-border-bottom-right-radius: 10px;
+  -o-border-bottom-right-radius: 10px;
+  -icab-border-bottom-right-radius: 10px;
+  -khtml-border-bottom-right-radius: 10px;
+  text-transform: uppercase;
+  display: inline-block;
+}
+.getstart_action:hover {
+  background: transparent;
+}
+.landing_btn {
+  background: transparent;
+  color: #a37e2d;
+  border: 3px solid #e5dac6;
+  font-size: 14px;
+  padding: 15px 20px;
   border-bottom-right-radius: 10px;
   -webkit-border-bottom-right-radius: 10px;
   -moz-border-bottom-right-radius: 10px;
@@ -213,9 +240,7 @@ section#callaction {
   display: inline-block;
 }
 .landing_btn:hover {
-  background: transparent;
-  color: #a37e2d;
-  border: 2px solid #e5dac6;
+  background: #e5dac6;
 }
 .callaction_animation {
   position: relative;
@@ -244,10 +269,10 @@ section#callaction {
     text-rendering: auto;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    opacity: 0.2;
+    color: #dbe3f4;
 }
 .scroll_content a:hover:before {
-  opacity: 1;
+  color: #abc3e6;
 }
 nav.secondary_nav {
     text-align: center;
@@ -272,6 +297,7 @@ nav.secondary_nav {
 .secondary_nav>ul>li>a:hover,.secondary_nav>ul>li>a:focus {
   color: #000;
   text-decoration: none;
+  border-bottom: 2px solid #6198d1;
 }
 .secondary_nav>ul>li:last-child:not(:first-child) {
   border-bottom-right-radius: 10px;
@@ -326,10 +352,10 @@ section#section_qualify {
 
 section#section_learn {
     background: #f0e9de;
-    padding: 20px 0 30px;
+    padding: 25px 0 45px;
 }
 .learn {
-  padding: 60px 60px 60px 110px;
+  padding: 60px 60px 60px 85px;
 }
 
 #section_learn img {
@@ -380,7 +406,8 @@ section#section_learn {
   background-image: url(../images/learn_illustration.png);
   background-size: 325px 150px;
   min-height: 150px;
-  margin-top: 100px;
+  margin-top: 120px;
+  background-position: top right;
 }
 section#workwitheon {
   padding: 50px;
@@ -409,6 +436,9 @@ section#workwitheon h2 {
   line-height: 18px;
   font-size: 0.8rem;
 }
+.learn .landing_btn {
+  padding: 15px 30px;
+}
 section#callnow {
   background: #006cb5;
   text-align: center;
@@ -433,7 +463,7 @@ section#testimonial .owl-carousel .item {
   max-width: 50%;
   display: block;
   margin: 70px auto;
-  border: 2px solid rgba(97, 152, 209, 0.2);
+  border: 3px solid rgba(97, 152, 209, 0.2);
   border-bottom-right-radius: 35px;
   -webkit-border-bottom-right-radius: 35px;
   -moz-border-bottom-right-radius: 35px;
@@ -441,6 +471,7 @@ section#testimonial .owl-carousel .item {
   -icab-border-bottom-right-radius: 35px;
   -khtml-border-bottom-right-radius: 35px;
   box-sizing: border-box;
+  background-clip: content-box;
 }
 section#testimonial .owl-carousel .quote_icon {
 width: 80px;
@@ -474,14 +505,15 @@ section#testimonial .owl-carousel .author_photo {
     -khtml-border-radius: 250px;
 }
 #testimonial .owl-theme .owl-dots .owl-dot span {
-    width: 18px;
-    height: 18px;
-    background: #8FC4EC;
-    border: 3px solid #6FB3E2;
+    width: 20px;
+    height: 20px;
+    background: #b4e3f7;
+    border: 3px solid #6198d1;
+    opacity: 0.2;
 }
 #testimonial .owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
-  background: #B3E3FA;
-  border: none;
+  background: #ffffff;
+  border: 1px solid #6198d1;
 }
 section#getstart {
     padding: 30px 20px;
