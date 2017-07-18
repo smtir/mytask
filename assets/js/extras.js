@@ -85,16 +85,6 @@ $( document ).ready( function() {
   google.maps.event.addDomListener(window, 'load', initmap);
   // End Homepage Google Map  
 
-  // Scroll Top
-  $(window).scroll(function(){
-        if ($(this).scrollTop() > 1000) {
-            $('a.scrollup').fadeIn();
-        } else {
-            $('a.scrollup').fadeOut();
-        }
-  }); 
-});
-
 //jQuery for page scrolling feature - requires jQuery Easing plugin
 $(function() {
     $(document).on('click', 'a.page-scroll', function(event) {

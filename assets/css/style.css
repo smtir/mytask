@@ -326,9 +326,10 @@ section#section_qualify {
 
 section#section_learn {
     background: #f0e9de;
+    padding: 20px 0 30px;
 }
 .learn {
-  padding: 60px 60px 60px 150px;
+  padding: 60px 60px 60px 110px;
 }
 
 #section_learn img {
@@ -379,6 +380,7 @@ section#section_learn {
   background-image: url(../images/learn_illustration.png);
   background-size: 325px 150px;
   min-height: 150px;
+  margin-top: 100px;
 }
 section#workwitheon {
   padding: 50px;
@@ -390,22 +392,22 @@ section#workwitheon h2 {
   color: #ddbc77;
 }
 .landing_work {
-
+  margin: 20px 0;
 }
 .landing_work>img {
   max-height: 50px;
 }
 .landing_work .work_title {
-    font-size: 0.9rem;
-    text-transform: uppercase;
-    margin: 10px;
-    font-weight: normal;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  margin: 10px;
+  font-weight: normal;
 }
 .landing_work .work_text {
-    margin: 0;
-    padding: 0;
-    line-height: 18px;
-    font-size: 0.8rem;
+  margin: 0;
+  padding: 0;
+  line-height: 18px;
+  font-size: 0.8rem;
 }
 section#callnow {
   background: #006cb5;
@@ -421,6 +423,7 @@ section#callnow p {
 }
 section#testimonial {
   background: #73b9e6;
+  padding: 0 0 40px;
 }
 section#testimonial .item {
 
@@ -470,6 +473,16 @@ section#testimonial .owl-carousel .author_photo {
     -icab-border-radius: 250px;
     -khtml-border-radius: 250px;
 }
+#testimonial .owl-theme .owl-dots .owl-dot span {
+    width: 18px;
+    height: 18px;
+    background: #8FC4EC;
+    border: 3px solid #6FB3E2;
+}
+#testimonial .owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
+  background: #B3E3FA;
+  border: none;
+}
 section#getstart {
     padding: 30px 20px;
 }
@@ -479,9 +492,13 @@ section#getstart {
 .getstart_head h1 {
     color: #ddbc77;
     text-align: center;
+    padding: 15px 0 20px;
+    font-size: 2rem;
 }
 .getstart_head h3 {
   text-align: center;
+  padding: 10px 0 30px;
+  font-size: 1.2rem;  
 }
 .icon {
     border: 3px solid #dbe3f4;
@@ -494,6 +511,7 @@ section#getstart {
     padding: 35px 20px;
     width: 148px;
     height: 148px;
+    margin: 0 auto;
 }
 .icon img {
 width: 100%;
@@ -504,6 +522,7 @@ max-height: 100%;
 }
 .desc {
     text-align: center;
+    padding: 10px 0;
 }
 section#contact {
 
@@ -618,7 +637,7 @@ section#contact .checkbox label .box i {
     top: 30%;
     left: 0;
     margin: 0 50px;
-    padding: 30px 40px 10px;
+    padding: 20px 30px 10px;
     border: 3px solid #abc3e6;
     border-bottom-right-radius: 10px;
     -webkit-border-bottom-right-radius: 10px;
@@ -743,23 +762,4 @@ ul.footer_navigation>li a {
 }
 .home_login_reg_btn {
   margin-left: 15px;
-}
-a.scrollup {
-  font-size: 20px;
-  text-align: center;
-  color: #fff;
-  opacity: 0.4;
-  padding: 5px 10px;
-  position: fixed;
-  bottom: 8px;
-  right: 27px;
-  background-color: #21759b;
-  border: 2px solid #0b5f86;
-  border-radius: 7px;
-  display: none;
-}
-.scrollup:hover {
-  opacity: 1;
-  box-shadow: 0 3px 7px rgba(0,0,0,0.3);
-  border-width: 3px;
 }
