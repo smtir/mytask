@@ -892,7 +892,33 @@ footer.footer {
 /*===============
 ##9.1 Pages
 =================*/
-
+section#content {
+    padding: 20px 0 30px;
+}
+.page_title h1 {
+  font-family: BookAntiqua;
+  color: #ddbc77;
+  text-align: center;
+}
+.page_content {
+  padding: 20px 60px;
+}
+.page_content h1,h2,h3,h4 {
+  font-family: BookAntiqua;
+  color: #ddbc77;
+}
+.page_content p {
+  font-family: 'Open Sans', sans-serif; 
+}
+.page_content img {
+  
+}
+.page_content ul,ol {
+  font-family: 'Open Sans', sans-serif; 
+}
+.page_content ul li,.page_content ol li {
+  
+}
 /*===============
 #10.0 Misc
 =================*/
