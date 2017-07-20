@@ -1062,6 +1062,9 @@ section#content {
 .company .tab-content p {
   margin: 20px 5px;
 }
+.company .company_img {
+  border-radius: 5px;
+}
 /*===============
 #10.0 Misc
 =================*/

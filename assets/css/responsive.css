@@ -214,6 +214,9 @@
     .company ul.nav.nav-tabs.partner {
         margin: 20px 0 0;
     }
+    .company .nav-tabs .nav-item.show .nav-link,.company .nav-tabs .nav-link.active {
+        border-color: #ddd !important;
+    }
 }
 
 @media (min-width: 321px) and (max-width: 349px) {
