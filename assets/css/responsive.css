@@ -205,6 +205,15 @@
     .contact_page .talkexpert {
         width: 100%;
     }
+    .company .tab-content {
+        margin: 20px 0 0;
+    }
+    .company .company_img {
+        margin: 10px 0;
+    }
+    .company ul.nav.nav-tabs.partner {
+        margin: 20px 0 0;
+    }
 }
 
 @media (min-width: 321px) and (max-width: 349px) {

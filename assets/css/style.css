@@ -1041,6 +1041,27 @@ section#content {
 .team_social li a {
   color: #000;
 }
+.company .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+    border-color: #ddd #fff #ddd #ddd !important;
+    background: #fff !important;
+    color: #000 !important;
+}
+.company .nav-tabs .nav-link {
+    border-color: #ddd;
+    color: #ffffff;
+    background: #ddbc77;
+}
+.company .nav-tabs .dropdown-menu {
+  position: relative;
+  float: none;
+}
+.partner .nav-link.active {
+  border-color: #ddd #ddd #fff #ddd !important;
+  color: #000 !important;
+}
+.company .tab-content p {
+  margin: 20px 5px;
+}
 /*===============
 #10.0 Misc
 =================*/
