@@ -21,15 +21,21 @@
 #13.0 Footer
 #14.0 Misc
 */
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700');
+@import url('https://fonts.googleapis.com/css?family=Lato:400,700');
+@font-face {
+  font-family: 'BookAntiqua';
+  src: url('../fonts/BookAntiqua.eot?#iefix') format('embedded-opentype'),  url('../fonts/BookAntiqua.woff') format('woff'), url('../fonts/BookAntiqua.ttf')  format('truetype'), url('../fonts/BookAntiqua.svg#BookAntiqua') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
 body {
     background-color: #E6E6E6;
     position: relative;
-}
-body {
+    font-family: 'Open Sans', sans-serif;
     width: 100%;
     height: 100%;
 }
-
 html {
     width: 100%;
     height: 100%;
@@ -67,6 +73,7 @@ a:visited {
 }
 .top_nav ul>li a {
   color: #a37e2d;
+  font-family: 'Lato', sans-serif;
 }
 .top_nav ul>li a:hover,.top_nav ul>li a:focus,.top_nav ul>li a:active {
   text-decoration: none;
@@ -103,6 +110,7 @@ ul.main_navigation>li a {
   font-style: normal;
   font-size: 14px;
   text-transform: uppercase;
+  font-family: 'Lato', sans-serif;
 }
 ul.main_navigation>li a:hover {
   opacity: 0.7;
@@ -203,10 +211,12 @@ section#callaction {
   text-align: center;
 }
 .callout h1 {
+  font-family: BookAntiqua;
   color: #a37e2d;
   margin: 0 0 25px;
 }
 .getstart_action {
+  font-family: 'Lato', sans-serif;
   background: #e5dac6;
   color: #a37e2d;
   font-size: 14px;
@@ -225,6 +235,7 @@ section#callaction {
   background: transparent;
 }
 .landing_btn {
+  font-family: 'Lato', sans-serif;
   background: transparent;
   color: #a37e2d;
   border: 3px solid #e5dac6;
@@ -293,6 +304,7 @@ nav.secondary_nav {
 .secondary_nav>ul>li>a {
   color: #000;
   font-size: 14px;
+  font-family: 'Lato', sans-serif;
 }
 .secondary_nav>ul>li>a:hover,.secondary_nav>ul>li>a:focus {
   color: #000;
@@ -371,12 +383,14 @@ section#section_learn {
  color: #a37e2d; 
  font-size: 1.9rem;
  font-weight: normal;
+ font-family: BookAntiqua;
 }
 .rate>p,.plan>p,.qualify>p,.learn>p {
     margin: 0 0 20px;
     padding: 5px;
     display: block;
     font-size: 14px;  
+    font-family: 'Open Sans', sans-serif;
 }
 .rate_img ,.qualify_img, .plan_img, .learn_img {
   background-repeat: no-repeat;
@@ -417,6 +431,7 @@ section#workwitheon h2 {
   display: block;
   margin: 20px 10px 40px;
   color: #ddbc77;
+  font-family: BookAntiqua;
 }
 .landing_work {
   margin: 20px 0;
@@ -425,6 +440,7 @@ section#workwitheon h2 {
   max-height: 50px;
 }
 .landing_work .work_title {
+  font-family: 'Lato', sans-serif;
   font-size: 0.9rem;
   text-transform: uppercase;
   margin: 10px;
@@ -435,6 +451,7 @@ section#workwitheon h2 {
   padding: 0;
   line-height: 18px;
   font-size: 0.8rem;
+  font-family: 'Open Sans', sans-serif;
 }
 .learn .landing_btn {
   padding: 15px 30px;
@@ -446,10 +463,10 @@ section#callnow {
   padding: 40px 15px;
 }
 section#callnow h2 {
-
+  font-family: BookAntiqua;
 }
 section#callnow p {
-
+  font-family: 'Open Sans', sans-serif;
 }
 section#testimonial {
   background: #73b9e6;
@@ -483,6 +500,7 @@ section#testimonial .owl-carousel .testimonial_text {
     padding: 5px 35px;
     text-align: center;
     font-size: 0.9rem;
+    font-family: 'Open Sans', sans-serif;
 }
 
 section#testimonial .owl-carousel .author_name {
@@ -526,11 +544,13 @@ section#getstart {
     text-align: center;
     padding: 15px 0 20px;
     font-size: 2rem;
+    font-family: BookAntiqua;
 }
 .getstart_head h3 {
   text-align: center;
   padding: 10px 0 30px;
   font-size: 1.2rem;  
+  font-family: 'Open Sans', sans-serif;
 }
 .icon {
     border: 3px solid #dbe3f4;
@@ -560,13 +580,14 @@ section#contact {
 
 }
 section#contact form {
-      margin: 0;
-    padding: 15px 30px;
+    margin: 0;
+    padding: 15px 20px;
 }
 section#contact form h1 {
     text-align: center;
     color: #ddbc77;
     font-size: 2rem;
+    font-family: BookAntiqua;
 }
 section#contact form input[type="text"] {
     width: 100%;
@@ -580,6 +601,7 @@ section#contact form input[type="text"] {
     -o-border-bottom-right-radius: 10px;
     -icab-border-bottom-right-radius: 10px;
     -khtml-border-bottom-right-radius: 10px;
+    font-family: 'Open Sans', sans-serif;
 }
 section#contact form textarea {
     width: 100%;
@@ -592,6 +614,7 @@ section#contact form textarea {
     -o-border-bottom-right-radius: 10px;
     -icab-border-bottom-right-radius: 10px;
     -khtml-border-bottom-right-radius: 10px;
+    font-family: 'Open Sans', sans-serif;
 }
 section#contact form input[type="text"]::-webkit-input-placeholder,section#contact form input[type="text"]::-moz-placeholder,section#contact form input[type="text"]:-ms-input-placeholder,section#contact form input[type="text"]:-moz-placeholder,
 section#contact form textarea::-webkit-input-placeholder,section#contact form textarea::-moz-placeholder,section#contact form textarea:-ms-input-placeholder,section#contact form textarea:-moz-placeholder {
@@ -616,6 +639,7 @@ section#contact .checkbox label {
   cursor: pointer;
   display: -webkit-inline-box;
   display: -moz-inline-box;
+  margin-top: 8px;
 }
 section#contact .checkbox label .box {
   background: #fff;
@@ -718,10 +742,11 @@ ul.openday {
 }
 .openday>li {
     list-style: none;
-    font-size: 13px;
+    font-size: 12px;
     line-height: 16px;
 }
 .direction_btn {
+  font-family: 'Lato', sans-serif;
   background: #e5dac6;
   color: #a37e2d;
   font-size: 14px;
@@ -745,9 +770,10 @@ ul.openday {
   border: 2px solid #e5dac6;
 }
 section#contact form .contact_submit {
+  font-family: 'Lato', sans-serif;
   background: #e5dac6;
   color: #a37e2d;
-  padding: 10px 20px;
+  padding: 15px 20px;
   border-bottom-right-radius: 10px;
   -webkit-border-bottom-right-radius: 10px;
   -moz-border-bottom-right-radius: 10px;
@@ -788,6 +814,7 @@ ul.footer_navigation>li a {
     font-weight: normal;
     font-style: normal;
     font-size: 14px;
+    font-family: 'Open Sans', sans-serif;
 }
 #home_login,#home_register {
     z-index: 9995;
