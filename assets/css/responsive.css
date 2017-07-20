@@ -381,6 +381,18 @@
     .contact_page .talkexpert {
         width: 80%;
     }
+    .company .tab-content {
+        margin: 20px 0 0;
+    }
+    .company .company_img {
+        margin: 10px 0;
+    }
+    .company ul.nav.nav-tabs.partner {
+        margin: 20px 0 0;
+    }
+    .company .nav-tabs .nav-item.show .nav-link,.company .nav-tabs .nav-link.active {
+        border-color: #ddd !important;
+    }
 }
 
 /* Landscape phone to portrait tablet */
@@ -442,11 +454,17 @@
     .contact_page .talkexpert {
         width: 80%;
     }
+    .company .tab-pane {
+        margin: 20px 0;
+    }
 }
 
 @media (max-width: 991px) {
     ul.main_navigation {
         display: none;
+    }
+    .page_content {
+        padding: 20px 30px;
     }
 }
 
