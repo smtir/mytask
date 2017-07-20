@@ -84,6 +84,33 @@ $( document ).ready( function() {
   }
   google.maps.event.addDomListener(window, 'load', initmap);
   // End Homepage Google Map  
+
+  // Contact Us Page referer
+  $('#referrer').on('change',function(){
+        if( $(this).val()==="friend" || $(this).val()==="family" || $(this).val()==="coworker" || $(this).val()==="realtor" || $(this).val()==="attorney" || $(this).val()==="insuranceagent" || $(this).val()==="financialplanner"){
+        $("#referrer_name").show()
+        } else{
+        $("#referrer_name").hide()
+        }
+    });
+
+  var tabsFn = (function() {
+  function init() {
+    setHeight();
+  }
+
+  function setHeight() {
+    var $tabPane = $(".tab-pane"),
+      tabsHeight = $(".nav-tabs").height();
+
+    $tabPane.css({
+      height: tabsHeight
+    });
+  }
+
+  $(init);
+})();
+
 });
 
 //jQuery for page scrolling feature - requires jQuery Easing plugin

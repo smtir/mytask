@@ -193,8 +193,17 @@
     section#testimonial .owl-carousel .item {
         max-width: 90%;
     }
-    a.scrollup {
-        z-index: 9999;
+    .page_content {
+        padding: 20px 30px;
+    }
+    .page_content h2 {
+        font-size: 1.3rem;
+    }
+    .visit {
+        margin-top: 30px;
+    }
+    .contact_page .talkexpert {
+        width: 100%;
     }
 }
 
@@ -357,8 +366,8 @@
     section#testimonial .owl-carousel .item {
         max-width: 90%;
     }
-    a.scrollup {
-        z-index: 9999;
+    .contact_page .talkexpert {
+        width: 80%;
     }
 }
 
@@ -417,6 +426,9 @@
     }
     ul.footer_navigation>li a {
         font-size: 16px;
+    }
+    .contact_page .talkexpert {
+        width: 80%;
     }
 }
 
