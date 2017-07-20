@@ -94,23 +94,9 @@ $( document ).ready( function() {
         }
     });
 
-  var tabsFn = (function() {
-  function init() {
-    setHeight();
-  }
-
-  function setHeight() {
-    var $tabPane = $(".tab-pane"),
-      tabsHeight = $(".nav-tabs").height();
-
-    $tabPane.css({
-      height: tabsHeight
-    });
-  }
-
-  $(init);
-})();
-
+    $('#main_tab').tab('show');
+    $('#bio_tab').tab('show');
+    $('#partner_tab').tab('show');
 });
 
 //jQuery for page scrolling feature - requires jQuery Easing plugin

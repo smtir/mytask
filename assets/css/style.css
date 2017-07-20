@@ -1024,6 +1024,23 @@ section#content {
 .contact_page ul li {
   margin: 10px 0;
 }
+.page_content .tab-content>.tab-pane {
+  height: auto !important;
+}
+.team_social {
+  margin: 10px 0;
+  padding: 0;
+  text-align: center;
+}
+.team_social li {
+  list-style: none;
+  display: inline;
+  margin: 0 6px;
+  font-size: 1.7rem;
+}
+.team_social li a {
+  color: #000;
+}
 /*===============
 #10.0 Misc
 =================*/
