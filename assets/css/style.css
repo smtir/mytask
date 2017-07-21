@@ -510,6 +510,7 @@ section#callaction {
 }
 .getstart_action:hover {
   background: transparent;
+  color: #000;
 }
 .landing_btn {
   font-family: 'Lato', sans-serif;
