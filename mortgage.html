@@ -80,10 +80,10 @@
           <div class="col-md-12 col-lg-4">
             <!-- Nav tabs -->
             <ul class="nav nav-tabs flex-column" role="tablist">
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Conventional Mortgages</a>
+              <li class="nav-item dropdown show">
+                <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-expanded="true">Conventional Mortgages</a>
                 <div class="dropdown-menu">
-                  <a class="dropdown-item" data-toggle="tab" href="#co_mortgage" role="tab">Conventional Mortgages</a>
+                  <a class="dropdown-item active" data-toggle="tab" href="#co_mortgage" role="tab" aria-expanded="true">Conventional Mortgages</a>
                   <a class="dropdown-item" data-toggle="tab" href="#fixed_mortgage" role="tab">Fixed-Rate Mortgage</a>
                   <a class="dropdown-item" data-toggle="tab" href="#ad_mortgage" role="tab">Adjustable-Rate Mortgage</a>
                 </div><!-- End : dropdown-menu -->
@@ -94,7 +94,7 @@
               <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#se_mortgage" role="tab">Second Mortgages</a></li>
 
               <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Portfolio Loans</a>
+                <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button">Portfolio Loans</a>
                 <div class="dropdown-menu">
                   <a class="dropdown-item" data-toggle="tab" href="#po_loans" role="tab">Portfolio Mortgages</a>
                   <a class="dropdown-item" data-toggle="tab" href="#fo_nationals" role="tab">Foreign Nationals</a>
@@ -108,7 +108,7 @@
           <div class="col-md-12 col-lg-8">
             <!-- Tab panes -->
             <div class="tab-content">
-              <div class="tab-pane active" id="co_mortgage" role="tabpanel">
+              <div class="tab-pane fade active show" id="co_mortgage" role="tabpanel">
                 <p>A mortgage is a legal document between a you, the borrower, and a financial
                 firm, like a mortgage company or bank. The mortgage pledges the property as
                 security until the loan amount is paid in full. The total amount of the loan is the
@@ -124,13 +124,13 @@
 
                 <!-- Nav tabs -->
                 <ul class="nav nav-tabs horizon_tab" role="tablist">
-                  <li class="nav-item"><a class="nav-link active" data-toggle="tab" href="#fixed_mortgage" role="tab">Fixed-Rate Mortgage</a></li>
+                  <li class="nav-item"><a class="nav-link active" data-toggle="tab" href="#fixed_mortgage" role="tab" aria-expanded="true">Fixed-Rate Mortgage</a></li>
                   <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#ad_mortgage" role="tab">Adjustable-Rate Mortgage</a></li>
                 </ul>
 
                 <!-- Tab panes -->
                 <div class="tab-content">
-                  <div class="tab-pane active" id="fixed_mortgage" role="tabpanel">
+                  <div class="tab-pane fade active show" id="fixed_mortgage" role="tabpanel">
                     <h3><b>30-year Fixed-Rate Mortgage</b></h3>
 
                     <p>You purchase a home with an agreement to pay off the loan over a period of 30 years</p>
@@ -171,7 +171,7 @@
                     <a href="#" class="landing_btn">Get a low mortgage rate for 15 years!</a>
                   </div><!-- End: mortgage content: col-md-12 col-lg-8: tab-content: tab-pane: tab-content: tab-pane -->
 
-                  <div class="tab-pane" id="ad_mortgage" role="tabpanel">
+                  <div class="tab-pane fade" id="ad_mortgage" role="tabpanel">
                     <p>You purchase a home with an agreement to pay a fixed amount at first, then pay a
                     fluctuating amount for the remainder of the term of the loan</p>
 
@@ -205,7 +205,7 @@
                 </div><!-- End: mortgage content: col-md-12 col-lg-8: tab-content: tab-pane: tab-content -->
               </div><!-- End: mortgage content: col-md-12 col-lg-8: tab-content: tab-pane -->
 
-              <div class="tab-pane" id="go_loans" role="tabpanel">
+              <div class="tab-pane fade" id="go_loans" role="tabpanel">
                 <h3>FHA Mortgages</h3>
                 <p>FHA (Federal Housing Authority) loans: Limited to homebuyers who do not qualify for a
                 market-rate loan. An FHA loan is serviced by a conventional mortgage lender. The FHA
@@ -228,7 +228,7 @@
                 <a href="" class="landing_btn">EON knows FHA loans!</a>
               </div><!-- End: mortgage content: col-md-12 col-lg-8: tab-content: tab-pane -->
 
-              <div class="tab-pane" id="ju_loans" role="tabpanel">
+              <div class="tab-pane fade" id="ju_loans" role="tabpanel">
                 <h3>Jumbo Loan Mortgages</h3>
 
                 <p>Most home loans have limits on the amount that can be borrowed. A Jumbo Loan is a
@@ -255,7 +255,7 @@
 
               </div><!-- End: mortgage content: col-md-12 col-lg-8: tab-content: tab-pane -->
 
-              <div class="tab-pane" id="se_mortgage" role="tabpanel">
+              <div class="tab-pane fade" id="se_mortgage" role="tabpanel">
                 <h3>Second Mortgages</h3>
 
                 <p>To get additional cash, you can take out a second loan using your home as collateral.
@@ -283,7 +283,7 @@
 
               </div><!-- End: mortgage content: col-md-12 col-lg-8: tab-content: tab-pane -->
 
-              <div class="tab-pane" id="po_loans" role="tabpanel">
+              <div class="tab-pane fade" id="po_loans" role="tabpanel">
                 <h3>Portfolio Mortgages</h3>
 
                 <p>In many cases, lenders package a group of mortgages and sell them in the financial
@@ -310,7 +310,7 @@
                 <a href="#" class="landing_btn">Become an EON portfolio customer!</a>
               </div><!-- End: mortgage content: col-md-12 col-lg-8: tab-content: tab-pane -->
 
-              <div class="tab-pane" id="fo_nationals" role="tabpanel">
+              <div class="tab-pane fade" id="fo_nationals" role="tabpanel">
                 <h3>Mortgages for Foreign Nationals</h3>
 
                 <p>Foreign nationals face challenges in purchasing a home in the US: very few lenders have
@@ -337,13 +337,13 @@
 
                 <!-- Nav tabs -->
                 <ul class="nav nav-tabs horizon_tab" role="tablist">
-                  <li class="nav-item"><a class="nav-link active" data-toggle="tab" href="#true_fo_nationals" role="tab">True Foreign Nationals</a></li>
+                  <li class="nav-item"><a class="nav-link active" data-toggle="tab" href="#true_fo_nationals" role="tab" aria-expanded="true">True Foreign Nationals</a></li>
                   <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#expat_program" role="tab">ExPat Program​</a></li>
                 </ul>
 
                 <!-- Tab panes -->
                 <div class="tab-content">
-                  <div class="tab-pane active" id="true_fo_nationals" role="tabpanel">
+                  <div class="tab-pane fade show active" id="true_fo_nationals" role="tabpanel">
                     <p>A Foreign National is defined as a borrower that is living outside the US, lacking a
                     social security number, credit history or employment history with filed tax
                     returns. A true Foreign National is a borrower that will not be living in the United
@@ -363,7 +363,7 @@
                     </ul>  
                   </div><!-- End: mortgage content: col-md-12 col-lg-8: tab-content: tab-pane: tab-content: tab-pane -->
 
-                  <div class="tab-pane" id="expat_program" role="tabpanel">
+                  <div class="tab-pane fade" id="expat_program" role="tabpanel">
                     <p>ExPat Program is available for a foreign borrower that will be moving to the US
                     and can go to 80% LTV up to $1.5 million for a primary Home. Borrower needs an
                     offer letter of employment to be pre-approved and they can be approved subject
@@ -380,7 +380,7 @@
                 </div><!-- End: mortgage content: col-md-12 col-lg-8: tab-content: tab-pane: tab-content -->
               </div><!-- End: mortgage content: col-md-12 col-lg-8: tab-content: tab-pane -->
 
-              <div class="tab-pane" id="start_fresh" role="tabpanel">
+              <div class="tab-pane fade" id="start_fresh" role="tabpanel">
                 <p>This program is designed for prospective homebuyers who recently experienced
                 a negative credit event due to job loss or a reduction in income. Fresh Start has
                 no seasoning requirements for such credit events, enabling potential borrowers
@@ -399,7 +399,7 @@
                 </ul>  
               </div><!-- End: mortgage content: col-md-12 col-lg-8: tab-content: tab-pane -->
 
-              <div class="tab-pane" id="self_employed" role="tabpanel">
+              <div class="tab-pane fade" id="self_employed" role="tabpanel">
                 <p>Business financial reports can be complex, and many mortgage lenders lack the financial
                 savvy to assess the assets, available cash flow and creditworthiness of a business owner
                 seeking to buy a home.
@@ -421,13 +421,13 @@
 
                 <!-- Nav tabs -->
                 <ul class="nav nav-tabs horizon_tab" role="tablist">
-                  <li class="nav-item"><a class="nav-link active" data-toggle="tab" href="#busi_owners" role="tab">Business Owners​</a></li>
+                  <li class="nav-item"><a class="nav-link active" data-toggle="tab" href="#busi_owners" role="tab" aria-expanded="true">Business Owners​</a></li>
                   <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#busi_use" role="tab">Business-Use</a></li>
                 </ul>
 
                 <!-- Tab panes -->
                 <div class="tab-content">
-                  <div class="tab-pane active" id="busi_owners" role="tabpanel">
+                  <div class="tab-pane fade show active" id="busi_owners" role="tabpanel">
                     <p>Options for Documenting Income:</p>
                     <ul>
                       <li>24-month Bank Statement
@@ -443,7 +443,7 @@
                     </ul>
                   </div><!-- End: mortgage content: col-md-12 col-lg-8: tab-content: tab-pane: tab-content: tab-pane -->
 
-                  <div class="tab-pane" id="busi_use" role="tabpanel">
+                  <div class="tab-pane fade" id="busi_use" role="tabpanel">
                     coming soon...
                   </div><!-- End: mortgage content: col-md-12 col-lg-8: tab-content: tab-pane: tab-content: tab-pane -->
                 </div><!-- End: mortgage content: col-md-12 col-lg-8: tab-content: tab-pane: tab-content -->

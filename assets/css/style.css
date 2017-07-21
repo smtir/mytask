@@ -1081,6 +1081,12 @@ Company + Mortgage Page
 .company .nav-tabs .dropdown-menu,.mortgage .nav-tabs .dropdown-menu {
   position: relative;
   float: none;
+  border-radius: 0;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -o-border-radius: 0;
+  -icab-border-radius: 0;
+  -khtml-border-radius: 0;
 }
 .company .dropdown-item.active,.company .dropdown-item:active,
 .mortgage .dropdown-item.active,.mortgage .dropdown-item:active {
