@@ -93,12 +93,6 @@ $( document ).ready( function() {
         $("#referrer_name").hide()
         }
     });
-
-  $('ul.nav-tabs').on('shown.bs.tab', function (e) {
-  e.target // newly activated tab
-  e.relatedTarget // previous active tab
-})
-
 });
 
 //jQuery for page scrolling feature - requires jQuery Easing plugin
