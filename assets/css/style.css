@@ -1002,6 +1002,9 @@ section#content {
 .page_content ul li,.page_content ol li {
   
 }
+/* 
+Contact Us Page
+*/
 .contact_us_page .openday>li {
   font-size: 16px;
   line-height: 25px;
@@ -1009,11 +1012,19 @@ section#content {
 .contact_us_page .page_content h2,.contact_us_page .page_content h4 {
   text-align: center;
 }
+/* 
+Contact Page
+*/
 .contact_page .talkexpert {
     text-align: center;
     margin: 10px auto;
     border: 3px solid #a09e9e;
     border-radius: 7px;
+    -webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+    -o-border-radius: 7px;
+    -icab-border-radius: 7px;
+    -khtml-border-radius: 7px;
     padding: 25px 15px;
     width: 60%;
 }
@@ -1026,6 +1037,9 @@ section#content {
 .contact_page ul li {
   margin: 10px 0;
 }
+/* 
+Company + Mortgage Page
+*/
 .page_content .tab-content>.tab-pane {
   height: auto !important;
 }
@@ -1057,6 +1071,11 @@ section#content {
     text-transform: uppercase;
     text-align: center;
     border-radius: 0;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    -o-border-radius: 0;
+    -icab-border-radius: 0;
+    -khtml-border-radius: 0;
 }
 .company .nav-tabs .dropdown-menu,.mortgage .nav-tabs .dropdown-menu {
   position: relative;
@@ -1077,6 +1096,11 @@ section#content {
 }
 .company .company_img {
   border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -o-border-radius: 5px;
+  -icab-border-radius: 5px;
+  -khtml-border-radius: 5px;
 }
 .company .horizon_tab .nav-item:first-child,
 .mortgage .horizon_tab .nav-item:first-child {

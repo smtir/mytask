@@ -93,10 +93,6 @@ $( document ).ready( function() {
         $("#referrer_name").hide()
         }
     });
-
-    $('#main_tab').tab('show');
-    $('#bio_tab').tab('show');
-    $('#partner_tab').tab('show');
 });
 
 //jQuery for page scrolling feature - requires jQuery Easing plugin
