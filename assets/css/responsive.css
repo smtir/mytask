@@ -205,17 +205,24 @@
     .contact_page .talkexpert {
         width: 100%;
     }
-    .company .tab-content {
+    .company .tab-content,.mortgage .tab-content {
         margin: 20px 0 0;
     }
     .company .company_img {
         margin: 10px 0;
     }
-    .company ul.nav.nav-tabs.partner {
+    .company ul.nav.nav-tabs.horizon_tab,.mortgage ul.nav.nav-tabs.horizon_tab {
         margin: 20px 0 0;
     }
-    .company .nav-tabs .nav-item.show .nav-link,.company .nav-tabs .nav-link.active {
+    .company .nav-tabs .nav-item.show .nav-link,.company .nav-tabs .nav-link.active,
+    .mortgage .nav-tabs .nav-item.show .nav-link,.mortgage .nav-tabs .nav-link.active {
         border-color: #ddd !important;
+    }
+    .company .horizon_tab .nav-link, .mortgage .horizon_tab .nav-link {
+        font-size: 13px;
+    }
+    .company .nav-tabs .nav-link, .mortgage .nav-tabs .nav-link {
+        font-size: 14px;
     }
 }
 
@@ -257,6 +264,9 @@
     section#testimonial .owl-carousel .item {
         max-width: 90%;
     }
+    .company .horizon_tab .nav-item:first-child,.mortgage .horizon_tab .nav-item:first-child {
+        padding: 0;
+    }
 }
 
 @media (min-width: 481px)  and (max-width: 575px) {  
@@ -266,6 +276,10 @@
     .qualify_img {
         margin-top: 50px;
     } 
+    .company .horizon_tab .nav-item:first-child,
+    .mortgage .horizon_tab .nav-item:first-child {
+        padding: 0 0 0 30px;
+    }
 }
 
 /* Small devices (landscape phones, 576px and up) */
@@ -381,16 +395,17 @@
     .contact_page .talkexpert {
         width: 80%;
     }
-    .company .tab-content {
+    .company .tab-content,.mortgage .tab-content {
         margin: 20px 0 0;
     }
     .company .company_img {
         margin: 10px 0;
     }
-    .company ul.nav.nav-tabs.partner {
+    .company ul.nav.nav-tabs.horizon_tab,.mortgage ul.nav.nav-tabs.horizon_tab {
         margin: 20px 0 0;
     }
-    .company .nav-tabs .nav-item.show .nav-link,.company .nav-tabs .nav-link.active {
+    .company .nav-tabs .nav-item.show .nav-link,.company .nav-tabs .nav-link.active,
+    .mortgage .nav-tabs .nav-item.show .nav-link,.mortgage .nav-tabs .nav-link.active {
         border-color: #ddd !important;
     }
 }
@@ -454,7 +469,7 @@
     .contact_page .talkexpert {
         width: 80%;
     }
-    .company .tab-pane {
+    .company .tab-pane,.mortgage .tab-pane {
         margin: 20px 0;
     }
 }
