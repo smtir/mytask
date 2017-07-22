@@ -94,6 +94,9 @@
         display: inline-block;
         margin: 5px;
     }
+    .company .nav-tabs .nav-link, .mortgage .nav-tabs .nav-link {
+        text-transform: capitalize;
+    }
 }
 
 /* Extra small devices (portrait phones, less than 576px) */
