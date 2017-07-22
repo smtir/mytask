@@ -1228,7 +1228,7 @@ Company + Mortgage Page
   border: none;
 }
 .modal-content .close {
-  font-size: 2.5rem;
-  color: #f00;
+  font-size: 3.5rem;
+  color: #dbe3f4;
   line-height: 1.2;
 }
