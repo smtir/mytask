@@ -78,6 +78,7 @@ section#contact form input[type="text"] {
     -icab-border-bottom-right-radius: 10px;
     -khtml-border-bottom-right-radius: 10px;
     font-family: 'Open Sans', sans-serif;
+    outline: 0 none;
 }
 section#contact form textarea {
     width: 100%;
@@ -91,6 +92,8 @@ section#contact form textarea {
     -icab-border-bottom-right-radius: 10px;
     -khtml-border-bottom-right-radius: 10px;
     font-family: 'Open Sans', sans-serif;
+    outline: 0 none;
+    resize: none;
 }
 section#contact form input[type="text"]::-webkit-input-placeholder,section#contact form input[type="text"]::-moz-placeholder,section#contact form input[type="text"]:-ms-input-placeholder,section#contact form input[type="text"]:-moz-placeholder,
 section#contact form textarea::-webkit-input-placeholder,section#contact form textarea::-moz-placeholder,section#contact form textarea:-ms-input-placeholder,section#contact form textarea:-moz-placeholder {
@@ -174,7 +177,7 @@ section#contact form .contact_submit:hover {
   color: #a37e2d;
   border: 2px solid #e5dac6;
 }
-.contact_us_page input[type="text"] {
+.contact_us_page input[type="text"], input[type="text"], input[type="password"] {
     width: 100%;
     margin: 0;
     border: 3px solid #abc3e6;
@@ -187,8 +190,9 @@ section#contact form .contact_submit:hover {
     -icab-border-bottom-right-radius: 10px;
     -khtml-border-bottom-right-radius: 10px;
     font-family: 'Open Sans', sans-serif;
+    outline: 0 none;
 }
-.contact_us_page textarea {
+.contact_us_page textarea, textarea {
     width: 100%;
     margin: 0;
     border: 3px solid #abc3e6;
@@ -200,6 +204,8 @@ section#contact form .contact_submit:hover {
     -icab-border-bottom-right-radius: 10px;
     -khtml-border-bottom-right-radius: 10px;
     font-family: 'Open Sans', sans-serif;
+    outline: 0 none;
+    resize: none;
 }
 .contact_us_page input[type="text"]::-webkit-input-placeholder,.contact_us_page input[type="text"]::-moz-placeholder,.contact_us_page input[type="text"]:-ms-input-placeholder,.contact_us_page input[type="text"]:-moz-placeholder,
 .contact_us_page textarea::-webkit-input-placeholder,.contact_us_page textarea::-moz-placeholder,.contact_us_page textarea:-ms-input-placeholder,.contact_us_page textarea:-moz-placeholder {
@@ -208,7 +214,7 @@ section#contact form .contact_submit:hover {
 .contact_us_page input[type="text"]:hover,.contact_us_page input[type="text"]:active,.contact_us_page input[type="text"]:focus, .contact_us_page textarea:hover,.contact_us_page textarea:active,textarea:focus {
   border: 3px solid #709fd5;
 }
-.contact_us_page select {
+.contact_us_page select, select {
   background-image: url(../images/dropdown.png);
   background-position: center right;
   background-repeat: no-repeat;
@@ -229,8 +235,9 @@ section#contact form .contact_submit:hover {
   -o-border-bottom-right-radius: 10px;
   -icab-border-bottom-right-radius: 10px;
   -khtml-border-bottom-right-radius: 10px;
+  outline: 0 none;
 }
-.contact_us_page button[type="submit"] {
+.contact_us_page button[type="submit"], button[type="submit"], .home_login_reg_btn {
   font-family: 'Lato', sans-serif;
   background: #e5dac6;
   color: #a37e2d;
@@ -243,7 +250,7 @@ section#contact form .contact_submit:hover {
   -khtml-border-bottom-right-radius: 10px;
   text-transform: uppercase;
   display: inline-block;
-  width: 100%;
+  max-width: 100%;
   margin: 0;
   border: 2px solid #e5dac6;
   font-size: 14px;
@@ -1132,4 +1139,12 @@ Company + Mortgage Page
 }
 .home_login_reg_btn {
   margin-left: 15px;
+}
+.modal-dialog .modal-content {
+  border-radius: 0px;
+  border: none;
+}
+.modal-content .close {
+  font-size: 2.5rem;
+  color: #f00;
 }
