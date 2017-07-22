@@ -211,23 +211,46 @@ section#contact form .contact_submit:hover {
 .contact_us_page textarea::-webkit-input-placeholder,.contact_us_page textarea::-moz-placeholder,.contact_us_page textarea:-ms-input-placeholder,.contact_us_page textarea:-moz-placeholder {
   color: #d1d3d4;
 }
-.contact_us_page input[type="text"]:hover,.contact_us_page input[type="text"]:active,.contact_us_page input[type="text"]:focus, .contact_us_page textarea:hover,.contact_us_page textarea:active,textarea:focus {
+.contact_us_page input[type="text"]:hover,.contact_us_page input[type="text"]:active,.contact_us_page input[type="text"]:focus, 
+.contact_us_page textarea:hover,.contact_us_page textarea:active,textarea:focus,.select_dropdown select:active,.select_dropdown select:focus,.select_dropdown select:hover {
   border: 3px solid #709fd5;
 }
-.contact_us_page select, select {
-  background-image: url(../images/dropdown.png);
-  background-position: center right;
-  background-repeat: no-repeat;
-  width: 100%;
+.select_dropdown {
+    position: relative;
+    width: 100%;
+}
+.select_dropdown:before {
+    content: '';
+    right: 3px;
+    top: 3px;
+    width: 35px;
+    height: 44px;
+    background: #f8f8f8;
+    position: absolute;
+    pointer-events: none;
+    display: block;
+    border-left: 1px solid #ccc;
+    border-bottom-right-radius: 8px;
+    -webkit-border-bottom-right-radius: 8px;
+    -moz-border-bottom-right-radius: 8px;
+    -o-border-bottom-right-radius: 8px;
+    -icab-border-bottom-right-radius: 8px;
+    -khtml-border-bottom-right-radius: 8px;
+    outline: 0 none;
+}
+.select_dropdown select {
+  display: inline-block;
   -webkit-appearance: none;
-  background-color: #F8F8F8;
-  border: 1px solid #D6D5D5;
+  -moz-appearance: none;
+  appearance: none;
   -webkit-box-shadow: none;
   -moz-box-shadow: none;
   box-shadow: none;
+  cursor: pointer;
+  width: 100%;
   color: #8A7575;
   font-family: 'Open Sans', sans-serif;
-  padding: 5px 15px;
+  padding: 10px 15px;
   border: 3px solid #abc3e6;
   border-bottom-right-radius: 10px;
   -webkit-border-bottom-right-radius: 10px;
@@ -236,6 +259,16 @@ section#contact form .contact_submit:hover {
   -icab-border-bottom-right-radius: 10px;
   -khtml-border-bottom-right-radius: 10px;
   outline: 0 none;
+}
+.select_dropdown:after {
+  content: "\f0d7";
+  font: normal normal normal 25px/1 FontAwesome;
+  right: 6px;
+  top: 14px;
+  position: absolute;
+  pointer-events: none;
+  width: 35px;
+  text-indent: 14px;
 }
 .contact_us_page button[type="submit"], button[type="submit"], .home_login_reg_btn {
   font-family: 'Lato', sans-serif;
