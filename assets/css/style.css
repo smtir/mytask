@@ -1217,8 +1217,13 @@ Company + Mortgage Page
 /*===============
 #10.0 Misc
 =================*/
-#home_login,#home_register {
-    z-index: 9995;
+.modal.fade.show {
+  background: #fff;
+}
+.modal {
+  overflow-x: hidden;
+  overflow-y: auto;
+  z-index: 9999;
 }
 .home_login_reg_btn {
   margin-left: 15px;

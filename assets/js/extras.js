@@ -96,6 +96,14 @@ $( document ).ready( function() {
 
   // Select2 Element
   $('select').select2();
+
+  $(document).on('click', 'testl', function(e) {
+    e.preventDefault();
+    setTimeout( function () {
+        $('.modal').data('bs.modal').handleUpdate();
+    } , 80 );
+});
+
 });
 
 //jQuery for page scrolling feature - requires jQuery Easing plugin
