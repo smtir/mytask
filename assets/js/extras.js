@@ -94,6 +94,7 @@ $( document ).ready( function() {
         }
     });
 
+  // Select2 Element
   $('select').select2();
 });
 
