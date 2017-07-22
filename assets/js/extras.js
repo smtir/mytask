@@ -93,6 +93,8 @@ $( document ).ready( function() {
         $("#referrer_name").hide()
         }
     });
+
+  $('select').select2();
 });
 
 //jQuery for page scrolling feature - requires jQuery Easing plugin

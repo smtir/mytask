@@ -270,6 +270,56 @@ section#contact form .contact_submit:hover {
   width: 35px;
   text-indent: 14px;
 }
+
+.page_content .select2-container {
+  width: 100% !important;
+}
+.page_content .select2-container--default .select2-selection--single {
+  width: 100%;
+  height: auto;
+  border: 3px solid #abc3e6;
+  margin-right: 5px;
+  padding: 10px 15px;
+  border-bottom-right-radius: 10px;
+  -webkit-border-bottom-right-radius: 10px;
+  -moz-border-bottom-right-radius: 10px;
+  -o-border-bottom-right-radius: 10px;
+  -icab-border-bottom-right-radius: 10px;
+  -khtml-border-bottom-right-radius: 10px;
+  border-top-left-radius: 0;
+  -webkit-border-top-left-radius: 0;
+  -moz-border-top-left-radius: 0;
+  -o-border-top-left-radius: 0;
+  -icab-border-top-left-radius: 0;
+  -khtml-border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  -webkit-border-top-right-radius: 0;
+  -moz-border-top-right-radius: 0;
+  -o-border-top-right-radius: 0;
+  -icab-border-top-right-radius: 0;
+  -khtml-border-top-right-radius: 0;
+  border-bottom-left-radius: 0;
+  -webkit-border-bottom-left-radius: 0;
+  -moz-border-bottom-left-radius: 0;
+  -o-border-bottom-left-radius: 0;
+  -icab-border-bottom-left-radius: 0;
+  -khtml-border-bottom-left-radius: 0;
+  font-family: 'Open Sans', sans-serif;
+  outline: 0 none;
+}
+.page_content .select2-container--default .select2-selection--single .select2-selection__arrow {
+    height: 50px;
+    right: 5px;
+    top: -2px;
+}
+.page_content .select2-container--default .select2-selection--single .select2-selection__arrow b {
+  border-width: 15px 10px 0 10px;
+  left: 0;
+}
+.page_content .select2-container--default.select2-container--open .select2-selection--single .select2-selection__arrow b {
+    border-width: 0 8px 10px 8px;
+}
+
 .contact_us_page button[type="submit"], button[type="submit"], .home_login_reg_btn {
   font-family: 'Lato', sans-serif;
   background: #e5dac6;
