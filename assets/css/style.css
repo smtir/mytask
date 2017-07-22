@@ -1237,3 +1237,7 @@ Company + Mortgage Page
   color: #dbe3f4;
   line-height: 1.2;
 }
+.modal-footer,.modal-header {
+  border-top: none !important;
+  border-bottom: none !important;
+}
