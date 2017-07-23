@@ -97,13 +97,6 @@ $( document ).ready( function() {
   // Select2 Element
   $('select').select2();
 
-  $(document).on('click', 'testl', function(e) {
-    e.preventDefault();
-    setTimeout( function () {
-        $('.modal').data('bs.modal').handleUpdate();
-    } , 80 );
-});
-
 });
 
 //jQuery for page scrolling feature - requires jQuery Easing plugin
@@ -115,4 +108,56 @@ $(function() {
         }, 1500, 'easeInOutExpo');
         event.preventDefault();
     });
+});
+
+//jQuery for page scrolling feature - requires jQuery Easing plugin
+$(function() {
+    $(document).on('click', '#purchase_modal_submit', function(event) {
+        $('#purchase_modal_submit_welcome').modal('show');
+    });
+});
+
+$(document).ready(function () {
+  var navListItems = $('div.setup-panel div a'),
+          allWells = $('.setup-content'),
+          allNextBtn = $('.nextBtn');
+
+  allWells.hide();
+
+  navListItems.click(function (e) {
+      e.preventDefault();
+      var $target = $($(this).attr('href')),
+              $item = $(this);
+
+      if (!$item.hasClass('disabled')) {
+          navListItems.removeClass('form_multi_step').addClass('form_multi_step_default');
+          $item.addClass('form_multi_step');
+          allWells.hide();
+          $target.show();
+          $target.find('input:eq(0)').focus();
+      }
+  });
+
+  allNextBtn.click(function(){
+      var curStep = $(this).closest(".setup-content"),
+          curStepBtn = curStep.attr("id"),
+          nextStepWizard = $('div.setup-panel div a[href="#' + curStepBtn + '"]').parent().next().children("a"),
+          curInputs = curStep.find("input[type='text'],input[type='url'],input[type='number'],input[type='radio'],select"),
+          isValid = true;
+
+      $(".form-group").removeClass("has-error");
+      $(".property_type").removeClass("has-error");
+      for(var i=0; i<curInputs.length; i++){
+          if (!curInputs[i].validity.valid){
+              isValid = false;
+              $(curInputs[i]).closest(".form-group").addClass("has-error");
+              $(curInputs[i]).closest(".property_type").addClass("has-error");
+          }
+      }
+
+      if (isValid)
+          nextStepWizard.removeAttr('disabled').trigger('click');
+  });
+
+  $('div.setup-panel div a.form_multi_step').trigger('click');
 });
