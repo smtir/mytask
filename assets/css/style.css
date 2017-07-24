@@ -1331,7 +1331,7 @@ section#getstart.getstart_modal .col-md-4 {
     box-shadow: none;
     opacity: .65;
 }
-.form_multi_step {
+.form_multi_step_active {
     background: #DEBC77 !important;
     border: 3px solid #dae4f4;
     border-radius: 50%;

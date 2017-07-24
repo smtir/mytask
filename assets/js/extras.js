@@ -130,8 +130,8 @@ $(document).ready(function () {
               $item = $(this);
 
       if (!$item.hasClass('disabled')) {
-          navListItems.removeClass('form_multi_step').addClass('form_multi_step_default');
-          $item.addClass('form_multi_step');
+          navListItems.removeClass('form_multi_step_active').addClass('form_multi_step_default');
+          $item.addClass('form_multi_step_active');
           allWells.hide();
           $target.show();
           $target.find('input:eq(0)').focus();
@@ -159,5 +159,5 @@ $(document).ready(function () {
           nextStepWizard.removeAttr('disabled').trigger('click');
   });
 
-  $('div.setup-panel div a.form_multi_step').trigger('click');
+  $('div.setup-panel div a.form_multi_step_active').trigger('click');
 });
