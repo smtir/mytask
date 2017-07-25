@@ -66,7 +66,7 @@
             <li><a href="mortgage.html">Mortgage Products</a></li>
             <li><a href="calculator.html">Calculators</a></li>
             <li><a href="contact.html">Contact</a></li>
-            <li><a href="getstart.html">Get Started</a></li>
+            <li><a href="#" id="getstart_menu" data-toggle="modal" data-target="#getstart_modal">Get Started</a></li>
           </ul>
           <div class="overlay"></div>
         </nav><!-- End: Header: row nav -->
@@ -564,7 +564,7 @@
           </div>
           <div class="modal-body">
             <div class="container">
-              <form role="form" action="index.html" name="" method="post">
+              <form role="form" action="index.php" name="" method="post">
                 <div class="row setup-content" id="step-1">
                   <div class="col-xs-6 col-md-12">
                       <div class="form-group">
@@ -696,7 +696,8 @@
                         </div><!-- End: get purchase modal: col-md-12 -->
                       </div><!-- End: get purchase modal: form-group row -->
 
-                      <button id="purchase_modal_submit" data-dismiss="modal" class="landing_btn" type="submit" >Continue</button>
+                      <!-- <button id="purchase_modal_submit" data-dismiss="modal" class="landing_btn" name="submit" type="submit" >Continue</button> -->
+                      <input type="submit" name="submit" id="purchase_modal_submit" data-dismiss="modal" class="landing_btn" value="Continue">
                     </div>
                   </div>
                 </div>
@@ -738,160 +739,113 @@
           </div>
           <div class="modal-body">
             <div class="container">
-              <form role="form" action="index.html" name="" method="post">
-                <div class="row setup-content" id="step-1">
-                  <div class="col-xs-6 col-md-12">
-                      <div class="form-group">
-                        <input id="purchase_price" type="number" min="1" step="1" required="required" class="form-control" />
-                        <label class="control-label">Purchase Price</label>
-                      </div>
-                      <div class="form-group">
-                        <input id="down_payment" type="number" min="1" step="1" required="required" class="form-control" />
-                        <label class="control-label">Down Payment</label>
-                      </div>
-                      <button class="landing_btn nextBtn" type="button" >Continue</button>
+              <!-- MultiStep Form -->
+              <div class="row">
+                  <div class="col-md-12">
+                      <form id="msform" method="post" action="" class="">
+                          
+                          <!-- fieldsets -->
+                          <stepsection class="row">
+                            <div class="col-xs-6 col-md-12">
+                              <div class="form-group">
+                                <input id="purchase_price" type="number" min="1" step="1" required="required" class="form-control" />
+                                <label class="control-label">Purchase Price</label>
+                              </div>
+                              <div class="form-group">
+                                <input id="down_payment" type="number" min="1" step="1" required="required" class="form-control" />
+                                <label class="control-label">Down Payment</label>
+                              </div>
+                            </div>
+                            <input type="button" name="next_form" class="next_form landing_btn" value="Next"/>
+                          </stepsection>
+
+                          <stepsection class="row">
+                            <div class="col-md-12">
+                              <div class="row property_type">
+                                <div class="col-lg-4">
+                                  <input id="single_family" required="required" type="radio" name="property_type" value="single_family" class="input-hidden" />
+                                  <label for="single_family">
+                                    <img src="assets/images/property_single_family.png">
+                                  </label>
+                                  <p class="property_desc">Single Family Home</p>
+                                </div>
+
+                                <div class="col-lg-4">
+                                  <input id="townhome" type="radio" name="property_type" value="townhome" class="input-hidden" />
+                                  <label for="townhome">
+                                    <img src="assets/images/property_twonhome.png">
+                                  </label>
+                                  <p class="property_desc">Townhome</p>
+                                </div>
+
+                                <div class="col-lg-4">
+                                  <input id="multi_unit" type="radio" name="property_type" value="multi_unit" class="input-hidden" />
+                                  <label for="multi_unit">
+                                    <img src="assets/images/property_multi_unit.png">
+                                  </label>
+                                  <p class="property_desc"> Multi-Unit (2-4)</p>
+                                </div>
+
+                                <div class="col-lg-4">
+                                  <input id="condo" type="radio" name="property_type" value="condo" class="input-hidden" />
+                                  <label for="condo">
+                                    <img src="assets/images/propert_condo.png">
+                                  </label>
+                                  <p class="property_desc">Condo</p>
+                                </div>
+
+                                <div class="col-lg-4">
+                                  <input id="co_op" type="radio" name="property_type" value="co_op" class="input-hidden" />
+                                  <label for="co_op">
+                                    <img src="assets/images/property_coop.png">
+                                  </label>
+                                  <p class="property_desc">Co-Op</p>
+                                </div>
+
+                                <div class="col-lg-4">
+                                  <input id="condotel" type="radio" name="property_type" value="condotel" class="input-hidden" />
+                                  <label for="condotel">
+                                    <img src="assets/images/property_condotel.png">
+                                  </label>
+                                  <p class="property_desc">Condotel</p>
+                                </div>
+                                <input type="button" name="previous_form" class="previous_form landing_btn" value="Previous"/>
+                                <input type="button" name="next_form" class="next_form landing_btn" value="Next"/>
+                              </div>
+                            </div>
+                          </stepsection>
+
+                          <stepsection class="row">
+                              <h2 class="fs-title">Create your account</h2>
+                              <h3 class="fs-subtitle">Fill in your credentials</h3>
+                              <input type="text" name="email" placeholder="Email"/>
+                              <input type="password" name="pass" placeholder="Password"/>
+                              <input type="password" name="cpass" placeholder="Confirm Password"/>
+                              <input type="button" name="previous_form" class="previous_form landing_btn" value="Previous"/>
+                              <input id="purchase_modal_submit" data-dismiss="modal" type="submit" name="submit" class="submit_form landing_btn" value="Submit"/>
+                          </stepsection>
+
+                          <stepsection class="row">
+                              <h2 class="fs-title">Create your account</h2>
+                              <h3 class="fs-subtitle">Fill in your credentials</h3>
+                              <input type="text" name="email" placeholder="Email"/>
+                              <input type="password" name="pass" placeholder="Password"/>
+                              <input type="password" name="cpass" placeholder="Confirm Password"/>
+                              <input type="button" name="previous_form" class="previous_form landing_btn" value="Previous"/>
+                              <input id="purchase_modal_submit" data-dismiss="modal" type="submit" name="submit" class="submit_form landing_btn" value="Submit"/>
+                          </stepsection>
+
+                          <!-- progressbar -->
+                          <ul id="progressbar">
+                              <li class="active"></li>
+                              <li></li>
+                              <li></li>
+                              <li></li>
+                          </ul>
+                      </form>
                   </div>
-                </div>
-
-                <div class="row setup-content" id="step-2">
-                  <div class="col-xs-6 col-md-12">
-                    <div class="row property_type">
-                      <div class="col-lg-4">
-                        <input id="single_family" required="required" type="radio" name="property_type" value="single_family" class="input-hidden" />
-                        <label for="single_family">
-                          <img src="assets/images/property_single_family.png">
-                        </label>
-                        <p class="property_desc">Single Family Home</p>
-                      </div>
-
-                      <div class="col-lg-4">
-                        <input id="townhome" type="radio" name="property_type" value="townhome" class="input-hidden" />
-                        <label for="townhome">
-                          <img src="assets/images/property_twonhome.png">
-                        </label>
-                        <p class="property_desc">Townhome</p>
-                      </div>
-
-                      <div class="col-lg-4">
-                        <input id="multi_unit" type="radio" name="property_type" value="multi_unit" class="input-hidden" />
-                        <label for="multi_unit">
-                          <img src="assets/images/property_multi_unit.png">
-                        </label>
-                        <p class="property_desc"> Multi-Unit (2-4)</p>
-                      </div>
-
-                      <div class="col-lg-4">
-                        <input id="condo" type="radio" name="property_type" value="condo" class="input-hidden" />
-                        <label for="condo">
-                          <img src="assets/images/propert_condo.png">
-                        </label>
-                        <p class="property_desc">Condo</p>
-                      </div>
-
-                      <div class="col-lg-4">
-                        <input id="co_op" type="radio" name="property_type" value="co_op" class="input-hidden" />
-                        <label for="co_op">
-                          <img src="assets/images/property_coop.png">
-                        </label>
-                        <p class="property_desc">Co-Op</p>
-                      </div>
-
-                      <div class="col-lg-4">
-                        <input id="condotel" type="radio" name="property_type" value="condotel" class="input-hidden" />
-                        <label for="condotel">
-                          <img src="assets/images/property_condotel.png">
-                        </label>
-                        <p class="property_desc">Condotel</p>
-                      </div>
-                      
-                    </div>
-                    <button class="landing_btn nextBtn" type="button" >Continue</button>
-                  </div>
-                </div>
-
-                <div class="row setup-content" id="step-3">
-                  <div class="col-xs-6 col-md-12">
-                    <div class="col-md-12">
-                      <div class="row">
-                        <div class="col-md-6">
-                          <img src="assets/images/credit_score.png">
-                        </div>
-
-                        <div class="col-md-6">
-                          <div class="form-group">
-                            <input id="credit_score" type="number" min="1" step="1" required="required" class="form-control" />
-                            <label class="control-label">Credit Score</label>
-                          </div>
-                        </div>
-
-                        <div class="col-md-12">
-                          <select class="select_dropdown">
-                            <option value="none" selected>Property Type</option>
-                            <option value="none">40-yr Interest Only</option>
-                            <option value="none">30-yr Fixed</option>
-                            <option value="none">20-yr Fixed</option>
-                            <option value="none">15-yr Fixed</option>
-                            <option value="none">10-yr Fixed</option>
-                            <option value="none">3/1 ARM</option>
-                            <option value="none">5/1 ARM</option>
-                            <option value="none">7/1 ARM</option>
-                            <option value="none">10/1 ARM</option>
-                          </select>
-                        </div>
-                      </div>
-                      <button class="landing_btn nextBtn" type="button" >Almost There</button>
-                    </div>
-                  </div>
-                </div>
-                <div class="row setup-content" id="step-4">
-                  <div class="col-xs-6 col-md-12">
-                    <div class="col-md-12">
-                      <p>Let us know how to get in touch. An EON loan expert will calculate the rates and contract you with quotes to compare.</p>
-
-                      <div class="form-group row">
-                        <div class="col-md-6 col-12">
-                          <input type="text" value="" name="first" placeholder="First">
-                        </div><!-- End: get purchase modal: col-md-6 -->
-
-                        <div class="col-md-6 col-12">
-                          <input type="text" value="" name="last" placeholder="Last">
-                        </div><!-- End: get purchase modal: col-md-6 -->
-                      </div><!-- End: get purchase modal: form-group row -->
-
-                      <div class="form-group row">
-                        <div class="col-md-12" id="modal_email">
-                          <input type="text" value="" name="email" class="email_icon" placeholder="Email">
-                        </div><!-- End: get purchase modal: col-md-12 -->
-                      </div><!-- End: get purchase modal: form-group row -->
-
-                      <div class="form-group row">
-                        <div class="col-md-12">
-                          <input type="text" value="" class="phone_icon" name="phone" placeholder="Phone">
-                        </div><!-- End: get purchase modal: col-md-12 -->
-                      </div><!-- End: get purchase modal: form-group row -->
-
-                      <button id="purchase_modal_submit" data-dismiss="modal" class="landing_btn" type="submit" >Continue</button>
-                    </div>
-                  </div>
-                </div>
-              </form>
-
-              <div class="stepwizard col-md-12">
-                <div class="stepwizard-row setup-panel">
-                  <div class="stepwizard-step">
-                    <a href="#step-1" type="button" class="btn form_multi_step_active"></a>
-                  </div>
-                  <div class="stepwizard-step">
-                    <a href="#step-2" type="button" class="btn form_multi_step_default" disabled="disabled"></a>
-                  </div>
-                  <div class="stepwizard-step">
-                    <a href="#step-3" type="button" class="btn form_multi_step_default" disabled="disabled"></a>
-                  </div>
-                  <div class="stepwizard-step">
-                    <a href="#step-4" type="button" class="btn form_multi_step_default" disabled="disabled"></a>
-                  </div>
-                </div>
               </div>
+              <!-- /.MultiStep Form -->
             </div>
           </div>
           <div class="modal-footer">
@@ -900,7 +854,7 @@
       </div>
     </div><!-- End: Refinance Modal -->
 
-    <!-- Pre-Qualify Modal -->
+    <!-- Prequalify Modal -->
     <div class="modal fade" id="getstart_prequalify_modal" role="dialog" aria-labelledby="getstart_prequalify_modal" aria-hidden="true">
       <div class="modal-dialog" role="document">
         <div class="modal-content">
@@ -912,167 +866,57 @@
           </div>
           <div class="modal-body">
             <div class="container">
-              <form role="form" action="index.html" name="" method="post">
-                <div class="row setup-content" id="step-1">
-                  <div class="col-xs-6 col-md-12">
-                      <div class="form-group">
-                        <input id="purchase_price" type="number" min="1" step="1" required="required" class="form-control" />
-                        <label class="control-label">Purchase Price</label>
-                      </div>
-                      <div class="form-group">
-                        <input id="down_payment" type="number" min="1" step="1" required="required" class="form-control" />
-                        <label class="control-label">Down Payment</label>
-                      </div>
-                      <button class="landing_btn nextBtn" type="button" >Continue</button>
+              <!-- MultiStep Form -->
+              <div class="row">
+                  <div class="col-md-12">
+                      <form id="msform" method="post" action="" class="">
+                          
+                          <!-- fieldsets -->
+                          <fieldset>
+                              <h2 class="fs-title">Personal Details</h2>
+                              <h3 class="fs-subtitle">Tell us something more about you</h3>
+                              <input type="text" name="fname" placeholder="First Name"/>
+                              <input type="text" name="lname" placeholder="Last Name"/>
+                              <input type="text" name="phone" placeholder="Phone"/>
+                              <input type="button" name="next_form" class="next_form landing_btn" value="Next"/>
+                          </fieldset>
+                          <fieldset>
+                              <h2 class="fs-title">Social Profiles</h2>
+                              <h3 class="fs-subtitle">Your presence on the social network</h3>
+                              <input type="text" name="twitter" placeholder="Twitter"/>
+                              <input type="text" name="facebook" placeholder="Facebook"/>
+                              <input type="text" name="gplus" placeholder="Google Plus"/>
+                              <input type="button" name="previous_form" class="previous_form landing_btn" value="Previous"/>
+                              <input type="button" name="next_form" class="next_form landing_btn" value="Next"/>
+                          </fieldset>
+                          <fieldset>
+                              <h2 class="fs-title">Create your account</h2>
+                              <h3 class="fs-subtitle">Fill in your credentials</h3>
+                              <input type="text" name="email" placeholder="Email"/>
+                              <input type="password" name="pass" placeholder="Password"/>
+                              <input type="password" name="cpass" placeholder="Confirm Password"/>
+                              <input type="button" name="previous_form" class="previous_form landing_btn" value="Previous"/>
+                              <input id="purchase_modal_submit" data-dismiss="modal" type="submit" name="submit" class="submit_form landing_btn" value="Submit"/>
+                          </fieldset>
+
+                          <!-- progressbar -->
+                          <ul id="progressbar">
+                              <li class="active"></li>
+                              <li></li>
+                              <li></li>
+                          </ul>
+                      </form>
                   </div>
-                </div>
-
-                <div class="row setup-content" id="step-2">
-                  <div class="col-xs-6 col-md-12">
-                    <div class="row property_type">
-                      <div class="col-lg-4">
-                        <input id="single_family" required="required" type="radio" name="property_type" value="single_family" class="input-hidden" />
-                        <label for="single_family">
-                          <img src="assets/images/property_single_family.png">
-                        </label>
-                        <p class="property_desc">Single Family Home</p>
-                      </div>
-
-                      <div class="col-lg-4">
-                        <input id="townhome" type="radio" name="property_type" value="townhome" class="input-hidden" />
-                        <label for="townhome">
-                          <img src="assets/images/property_twonhome.png">
-                        </label>
-                        <p class="property_desc">Townhome</p>
-                      </div>
-
-                      <div class="col-lg-4">
-                        <input id="multi_unit" type="radio" name="property_type" value="multi_unit" class="input-hidden" />
-                        <label for="multi_unit">
-                          <img src="assets/images/property_multi_unit.png">
-                        </label>
-                        <p class="property_desc"> Multi-Unit (2-4)</p>
-                      </div>
-
-                      <div class="col-lg-4">
-                        <input id="condo" type="radio" name="property_type" value="condo" class="input-hidden" />
-                        <label for="condo">
-                          <img src="assets/images/propert_condo.png">
-                        </label>
-                        <p class="property_desc">Condo</p>
-                      </div>
-
-                      <div class="col-lg-4">
-                        <input id="co_op" type="radio" name="property_type" value="co_op" class="input-hidden" />
-                        <label for="co_op">
-                          <img src="assets/images/property_coop.png">
-                        </label>
-                        <p class="property_desc">Co-Op</p>
-                      </div>
-
-                      <div class="col-lg-4">
-                        <input id="condotel" type="radio" name="property_type" value="condotel" class="input-hidden" />
-                        <label for="condotel">
-                          <img src="assets/images/property_condotel.png">
-                        </label>
-                        <p class="property_desc">Condotel</p>
-                      </div>
-                      
-                    </div>
-                    <button class="landing_btn nextBtn" type="button" >Continue</button>
-                  </div>
-                </div>
-
-                <div class="row setup-content" id="step-3">
-                  <div class="col-xs-6 col-md-12">
-                    <div class="col-md-12">
-                      <div class="row">
-                        <div class="col-md-6">
-                          <img src="assets/images/credit_score.png">
-                        </div>
-
-                        <div class="col-md-6">
-                          <div class="form-group">
-                            <input id="credit_score" type="number" min="1" step="1" required="required" class="form-control" />
-                            <label class="control-label">Credit Score</label>
-                          </div>
-                        </div>
-
-                        <div class="col-md-12">
-                          <select class="select_dropdown">
-                            <option value="none" selected>Property Type</option>
-                            <option value="none">40-yr Interest Only</option>
-                            <option value="none">30-yr Fixed</option>
-                            <option value="none">20-yr Fixed</option>
-                            <option value="none">15-yr Fixed</option>
-                            <option value="none">10-yr Fixed</option>
-                            <option value="none">3/1 ARM</option>
-                            <option value="none">5/1 ARM</option>
-                            <option value="none">7/1 ARM</option>
-                            <option value="none">10/1 ARM</option>
-                          </select>
-                        </div>
-                      </div>
-                      <button class="landing_btn nextBtn" type="button" >Almost There</button>
-                    </div>
-                  </div>
-                </div>
-                <div class="row setup-content" id="step-4">
-                  <div class="col-xs-6 col-md-12">
-                    <div class="col-md-12">
-                      <p>Let us know how to get in touch. An EON loan expert will calculate the rates and contract you with quotes to compare.</p>
-
-                      <div class="form-group row">
-                        <div class="col-md-6 col-12">
-                          <input type="text" value="" name="first" placeholder="First">
-                        </div><!-- End: get purchase modal: col-md-6 -->
-
-                        <div class="col-md-6 col-12">
-                          <input type="text" value="" name="last" placeholder="Last">
-                        </div><!-- End: get purchase modal: col-md-6 -->
-                      </div><!-- End: get purchase modal: form-group row -->
-
-                      <div class="form-group row">
-                        <div class="col-md-12" id="modal_email">
-                          <input type="text" value="" name="first" placeholder="Email">
-                        </div><!-- End: get purchase modal: col-md-12 -->
-                      </div><!-- End: get purchase modal: form-group row -->
-
-                      <div class="form-group row">
-                        <div class="col-md-12">
-                          <input type="text" value="" name="phone" placeholder="Phone">
-                        </div><!-- End: get purchase modal: col-md-12 -->
-                      </div><!-- End: get purchase modal: form-group row -->
-
-                      <button id="purchase_modal_submit" data-dismiss="modal" class="landing_btn" type="submit" >Continue</button>
-                    </div>
-                  </div>
-                </div>
-              </form>
-
-              <div class="stepwizard col-md-12">
-                <div class="stepwizard-row setup-panel">
-                  <div class="stepwizard-step">
-                    <a href="#step-1" type="button" class="btn form_multi_step"></a>
-                  </div>
-                  <div class="stepwizard-step">
-                    <a href="#step-2" type="button" class="btn form_multi_step" disabled="disabled"></a>
-                  </div>
-                  <div class="stepwizard-step">
-                    <a href="#step-3" type="button" class="btn form_multi_step" disabled="disabled"></a>
-                  </div>
-                  <div class="stepwizard-step">
-                    <a href="#step-4" type="button" class="btn form_multi_step" disabled="disabled"></a>
-                  </div>
-                </div>
               </div>
+              <!-- /.MultiStep Form -->
             </div>
           </div>
           <div class="modal-footer">
           </div>
         </div>
       </div>
-    </div><!-- End: Pre-Qualify Modal -->
+    </div><!-- End: Prequalify Modal -->
+
 
     <!-- purchase_modal_submit_welcome Modal -->
     <div class="modal fade" id="getstart_modal_submit_welcome" tabindex="-1" role="dialog" aria-labelledby="getstart_modal_submit_welcome" aria-hidden="true">

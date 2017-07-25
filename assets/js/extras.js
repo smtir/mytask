@@ -39,6 +39,12 @@ $( document ).ready( function() {
     $('.m_main_navigation').removeClass('reveal_main_navigation');
     $('.overlay').hide();
   });
+
+  // On Mobile Menu Click GetStart to close overlay
+  $('#getstart_menu').on('click', function(){
+    $('.m_main_navigation').removeClass('reveal_main_navigation');
+    $('.overlay').hide();
+  });
   // End Mobile Navigation
 
   // Homepage Animation
@@ -97,6 +103,8 @@ $( document ).ready( function() {
   // Select2 Element
   $('select').select2();
 
+
+
 });
 
 //jQuery for page scrolling feature - requires jQuery Easing plugin
@@ -112,52 +120,100 @@ $(function() {
 
 //jQuery for page scrolling feature - requires jQuery Easing plugin
 $(function() {
-    $(document).on('click', '#purchase_modal_submit', function(event) {
-        $('#purchase_modal_submit_welcome').modal('show');
+    $(document).on('click', '#purchase_modal_submit', function(e) {
+        e.preventDefault();
+        $('#getstart_modal_submit_welcome').modal('show').fadeIn(450);
     });
 });
 
 $(document).ready(function () {
-  var navListItems = $('div.setup-panel div a'),
-          allWells = $('.setup-content'),
-          allNextBtn = $('.nextBtn');
+  //jQuery time
+var current_fs, next_fs, previous_fs; //fieldsets
+var left, opacity, scale; //fieldset properties which we will animate
+var animating; //flag to prevent quick multi-click glitches
 
-  allWells.hide();
-
-  navListItems.click(function (e) {
-      e.preventDefault();
-      var $target = $($(this).attr('href')),
-              $item = $(this);
-
-      if (!$item.hasClass('disabled')) {
-          navListItems.removeClass('form_multi_step_active').addClass('form_multi_step_default');
-          $item.addClass('form_multi_step_active');
-          allWells.hide();
-          $target.show();
-          $target.find('input:eq(0)').focus();
-      }
+$(".next_form").click(function(){
+  if(animating) return false;
+  animating = true;
+  
+  current_fs = $(this).parent();
+  next_fs = $(this).parent().next();
+  
+  //activate next step on progressbar using the index of next_fs
+  $("#progressbar li").eq($("stepsection").index(next_fs)).addClass("active");
+  //de-activate current step on progressbar
+  $("#progressbar li").eq($("stepsection").index(current_fs)).removeClass("active");
+  
+  //show the next stepsection
+  next_fs.show(); 
+  //hide the current stepsection with style
+  current_fs.animate({opacity: 0}, {
+    step: function(now, mx) {
+      //as the opacity of current_fs reduces to 0 - stored in "now"
+      //1. scale current_fs down to 80%
+      scale = 1 - (1 - now) * 0.2;
+      //2. bring next_fs from the right(50%)
+      left = (now * 50)+"%";
+      //3. increase opacity of next_fs to 1 as it moves in
+      opacity = 1 - now;
+      current_fs.css({
+        //'transform': 'scale('+scale+')',
+        'position': 'relative'
+      });
+      next_fs.css({'left': left, 'opacity': opacity});
+    }, 
+    duration: 800, 
+    complete: function(){
+      current_fs.hide();
+      animating = false;
+    }, 
+    //this comes from the custom easing plugin
+    easing: 'easeInOutBack'
   });
-
-  allNextBtn.click(function(){
-      var curStep = $(this).closest(".setup-content"),
-          curStepBtn = curStep.attr("id"),
-          nextStepWizard = $('div.setup-panel div a[href="#' + curStepBtn + '"]').parent().next().children("a"),
-          curInputs = curStep.find("input[type='text'],input[type='url'],input[type='number'],input[type='radio'],select"),
-          isValid = true;
-
-      $(".form-group").removeClass("has-error");
-      $(".property_type").removeClass("has-error");
-      for(var i=0; i<curInputs.length; i++){
-          if (!curInputs[i].validity.valid){
-              isValid = false;
-              $(curInputs[i]).closest(".form-group").addClass("has-error");
-              $(curInputs[i]).closest(".property_type").addClass("has-error");
-          }
-      }
-
-      if (isValid)
-          nextStepWizard.removeAttr('disabled').trigger('click');
-  });
-
-  $('div.setup-panel div a.form_multi_step_active').trigger('click');
 });
+
+$(".previous_form").click(function(){
+  if(animating) return false;
+  animating = true;
+  
+  current_fs = $(this).parent();
+  previous_fs = $(this).parent().prev();
+  
+  //activate previous step on progressbar using the index of previous_fs
+  $("#progressbar li").eq($("stepsection").index(previous_fs)).addClass("active");
+  //de-activate current step on progressbar
+  $("#progressbar li").eq($("stepsection").index(current_fs)).removeClass("active");
+  
+  //show the previous stepsection
+  previous_fs.show(); 
+  //hide the current stepsection with style
+  current_fs.animate({opacity: 0}, {
+    step: function(now, mx) {
+      //as the opacity of current_fs reduces to 0 - stored in "now"
+      //1. scale previous_fs from 80% to 100%
+      scale = 0.8 + (1 - now) * 0.2;
+      //2. take current_fs to the right(50%) - from 0%
+      left = ((1-now) * 50)+"%";
+      //3. increase opacity of previous_fs to 1 as it moves in
+      opacity = 1 - now;
+      current_fs.css({'left': left});
+      previous_fs.css({'opacity': opacity});
+    }, 
+    duration: 800, 
+    complete: function(){
+      current_fs.hide();
+      animating = false;
+    }, 
+    //this comes from the custom easing plugin
+    easing: 'easeInOutBack'
+  });
+});
+
+$(".submit_form").click(function(){
+  return false;
+  $( '.submit_form' ).reset();
+});
+});
+
+
+
